@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
- "scripts": {
+  "scripts": {
     "start": "node app.js"
-},
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "request": "^2.88.2"
   }
 }
