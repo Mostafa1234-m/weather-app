@@ -3,7 +3,7 @@ const fs = require("fs");
 const url = require("url");
 const request = require("request");
 
-const apiKey = require("./apikey");
+const apiKey = process.env.API_KEY;
 
 const server = http.createServer((req, res) => {
 
