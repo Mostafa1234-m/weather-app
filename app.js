@@ -3,7 +3,7 @@ const fs = require("fs");
 const url = require("url");
 const request = require("request");
 
-const apiKey = process.env.API_KEY;
+const apiKey = require("./apikey");
 
 const server = http.createServer((req, res) => {
 
@@ -298,8 +298,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 });
 
-server.listen(4000, () => {
+const PORT = process.env.PORT || 4000;
 
-    console.log("Server Running...");
-
+server.listen(PORT, () => {
+    console.log(`Server Running on Port ${PORT}`);
 });
